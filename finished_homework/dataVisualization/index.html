@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="D3byEX 1.1">
     <title>Document</title>
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://d3js.org/d3-queue.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
 
     <style>
     body{
@@ -21,25 +20,7 @@
 </head>
 
 <body>
-    <div class="container">  
     <h1>Data visualization</h1>
-    <p>Data visualzation is placing data in a visual context for easy understanding.</p>
-    <p>Data visualization is used to identify relationships and patterns.</p>
-    <p></p>
-    <h2>D3.js what is it?</h2>
-    <p>D3.js is a JavaScript library for manipulating DOM objects based on data.</p>
-    <p>D3.js is used for data visualization.</p>
-
-    <h2>How is D3.js different?</h2>
-    <p>Provides domain specific language for transforming the DOM.</p>
-    <p>D3 handles the rendering of the data, SVG, and CSS.</p>
-    <p>Syntax is similar to JQuery.</p>
-
-    <h2>How to select items</h2>
-    <p>Uses the W3C selectors to select items in the DOM.</p>
-    <p>To make a selection the global namespace d3 must be used.</p>
-    
-
     <h2>Us map: top 50 cities with most population</h2>
     <script>
         // main svg element
@@ -80,7 +61,6 @@
                         stroke: 'black'
                     });
 
-               
                 svg.selectAll('circle')
                     .data(cities)
                     .enter()
@@ -122,7 +102,7 @@
 
 
 
-</div>
+
 </body>
 
 </html>
